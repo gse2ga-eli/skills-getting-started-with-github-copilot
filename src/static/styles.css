@@ -144,15 +144,50 @@ button:hover {
 }
 
 .participants-list {
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
-.participants-list li {
-  margin-bottom: 5px;
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.participant-email {
   color: #555;
   font-size: 14px;
-  list-style-type: disc;
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
 }
 
 .no-participants {
