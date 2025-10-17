@@ -42,7 +42,7 @@ class TestCompleteWorkflow:
     def test_multiple_activities_signup(self, client, reset_activities):
         """Test a student signing up for multiple different activities."""
         email = "multisport@mergington.edu"
-        activities = ["Soccer Team", "Basketball Club", "Swimming Club"] if "Swimming Club" in client.get("/activities").json() else ["Soccer Team", "Basketball Club", "Science Club"]
+        activities = ["Soccer Team", "Basketball Club", "Swimming Club"]
         
         # Sign up for multiple activities
         for activity in activities:
